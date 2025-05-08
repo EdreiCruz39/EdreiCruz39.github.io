@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Cadastro de Contas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #2c3e50;
+      text-align: center;
+      text-align: center;
+      margin: 0 0 5px 0;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .cabecalho {
+      text-align: center;
+      margin-bottom: 08px;
+    }
+
+    .cabecalho img {
+      max-height: 100px;
+      margin-bottom: 01px;
+    }
+
+    .print-instructions {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+        padding: 0;
+      }
+
+      .print-instructions {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cabecalho">
+      <img src="https://sindsaude-ro.org.br/wp-content/uploads/2023/02/brasao-de-porto-velho.png"
+        alt="Logo Prefeitura de Porto Velho">
+      <h4>PREFEITURA MUNICIPAL DE PORTO VELHO<br>SECRETARIA MUNICIPAL DE FAZENDA - SEMFAZ<br>SUBSECRETARIA DE FINANÇAS E
+        CONTABILIDADE – SUFIN<br>COORDENADORIA GERAL DE CONTABILIDADE – CGC</h4>
+    </div>
+    <h1>Formulário de Cadastro de Contas</h1>
+    <form>
+      <label for="tipoEmenda">Tipo de Emenda:</label>
+      <select id="tipoEmenda" name="tipoEmenda">
+        <option>Emenda não impositiva</option>
+        <option>Emenda parlamentar de bancada ou de bloco</option>
+        <option>Emenda parlamentar individual</option>
+        <option>Emenda parlamentar de transferência especial</option>
+      </select>
+
+      <label for="esfera">Esfera:</label>
+      <select id="esfera" name="esfera">
+        <option>Estadual</option>
+        <option>Federal</option>
+        <option>Municipal</option>
+      </select>
+
+      <label for="anoEmenda">Ano da Emenda:</label>
+      <input type="text" id="anoEmenda" name="anoEmenda">
+
+      <label for="numeroEmenda">Número da Emenda:</label>
+      <input type="text" id="numeroEmenda" name="numeroEmenda">
+
+      <label for="nomeParlamentar">Nome do Parlamentar:</label>
+      <input type="text" id="nomeParlamentar" name="nomeParlamentar">
+
+      <label for="partido">Partido Político:</label>
+      <input type="text" id="partido" name="partido">
+
+      <label for="valor">Valor:</label>
+      <input type="text" id="valor" name="valor">
+
+      <label for="contaBancaria">Número da Conta Bancária:</label>
+      <input type="text" id="contaBancaria" name="contaBancaria">
+
+      <label for="fonteRecurso">Fonte de Recurso:</label>
+      <input type="text" id="fonteRecurso" name="fonteRecurso">
+
+      <label for="objeto">Objeto:</label>
+      <input type="text" id="objeto" name="objeto">
+
+      <label for="localInvestimento">Local do Investimento:</label>
+      <input type="text" id="localInvestimento" name="localInvestimento">
+
+      <label for="funcao">Função:</label>
+      <select id="funcao" name="funcao">
+        <option>001 - Legislativo</option>
+        <option>002 - Judiciário</option>
+        <option>003 - Essencial à Justiça</option>
+        <option>004 – Administração</option>
+        <option>005 - Defesa Nacional</option>
+        <option>006 - Segurança Pública Agrária</option>
+        <option>007 - Relações exteriores</option>
+        <option>008 - Assistência Social</option>
+        <option>009 - Previdência Social</option>
+        <option>010 - Saúde</option>
+        <option>011 - Trabalho</option>
+        <option>012 - Educação</option>
+        <option>013 - Cultura</option>
+        <option>014 - Direitos da Cidadania</option>
+        <option>015 - Urbanismo</option>
+        <option>016 - Habitação</option>
+        <option>017 - Saneamento</option>
+        <option>018 - Gestão Ambiental</option>
+        <option>019 - Ciência e Tecnologia</option>
+        <option>020 - Agricultura</option>
+        <option>022 - Indústria</option>
+        <option>023 - Comércio e Serviço</option>
+        <option>024 - Comunicações</option>
+        <option>025 - Energia</option>
+        <option>026 - Transporte</option>
+        <option>027 - Desporto e Lazer</option>
+        <option>028 - Encargos Especiais</option>
+        <option>028 - Encargos Especiais</option>
+        <option>099 - Reserva de Contingencia</option>
+      </select>
+
+      <label for="subfuncao">Subfunção:</label>
+      <select id="subfuncao" name="subfuncao">
+        <option>001 - Agricultura</option>
+        <option>031 - Ação Legislativa</option>
+        <option>032 - Controle Externo</option>
+        <option>061 - Ação Judiciária</option>
+        <option>062 - Defesa do Interesse Público no P. Judiciário</option>
+        <option>091 - Defesa da Ordem Jurídica</option>
+        <option>092 - Representação Judicial e Extrajudicial</option>
+        <option>099 - Reserva de Contingência</option>
+        <option>121 - Planejamento e Orçamento</option>
+        <option>122 - Administração Geral</option>
+        <option>123 - Administração Financeira</option>
+        <option>124 Controle Interno</option>
+        <option>125 - Normatização e Fiscalização</option>
+        <option>126 - Tecnologia da Informação</option>
+        <option>127 - Ordenamento Territorial</option>
+        <option>128 - Formação de Recursos Humanos</option>
+        <option>129 - Administração de Receitas</option>
+        <option>130 - Administração de Concessões</option>
+        <option>131 - Comunicação Social</option>
+        <option>151 - Defesa Área</option>
+        <option>152 - Defesa Naval</option>
+        <option>153 - Defesa Terrestre</option>
+        <option>181 - Policiamento</option>
+        <option>182 - Defesa Civil</option>
+        <option>183 - Informação e Inteligência</option>
+        <option>211 - Relações Diplomáticas</option>
+        <option>212 - Cooperação Internacional</option>
+        <option>241 - Assistência ao Idoso</option>
+        <option>242 - Assistência ao Portador de Deficiência</option>
+        <option>243 - Assistência à Criança e ao Adolescente</option>
+        <option>244 - Assistência Comunitária</option>
+        <option>271 - Previdência Básica</option>
+        <option>272 - Previdência do Regime Estatutário</option>
+        <option>273 - Previdência Complementar</option>
+        <option>274 - Previdência Especial</option>
+        <option>301 - Atenção Básica</option>
+        <option>302 - Assistência Hospitalar e Ambulatorial</option>
+        <option>303 - Suporte Profilático e Terapêutico</option>
+        <option>304 - Vigilância Sanitária</option>
+        <option>305 - Vigilância Epidemiológica</option>
+        <option>306 - Alimentação e Nutrição</option>
+        <option>331 - Proteção e Benefícios ao Trabalhador</option>
+        <option>332 - Relações de Trabalho</option>
+        <option>333 - Empregabilidade</option>
+        <option>334 - Fomento ao Trabalho</option>
+        <option>361 - Ensino Fundamental</option>
+        <option>362 - Ensino Médio</option>
+        <option>363 - Ensino Profissional</option>
+        <option>364 - Ensino Superior</option>
+        <option>365 - Educação Infantil</option>
+        <option>366 - Educação de Jovens e Adultos</option>
+        <option>367 - Educação Especial</option>
+        <option>368 - Educação Básica
+        <option>391 - Patrimônio Histórico, Artístico e Arqueológico</option>
+        <option>392 - Difusão Cultural</option>
+        <option>421 - Custódia e Reintegração Social</option>
+        <option>422 - Direitos Individuais, Coletivos e Difusos</option>
+        <option>423 - Assistência aos Povos Indígenas</option>
+        <option>451 - Infra-estrutura Urbana</option>
+        <option>452 - Serviços Urbanos</option>
+        <option>453 - Transportes Coletivos Urbanos</option>
+        <option>481 - Habitação Rural</option>
+        <option>482 - Habitação Urbana</option>
+        <option>511 - Saneamento Básico Rural</option>
+        <option>512 - Saneamento Básico Urbano</option>
+        <option>541 - Preservação e Conservação Ambiental</option>
+        <option>542 - Controle Ambiental</option>
+        <option>543 - Recuperação de Áreas Degradadas</option>
+        <option>544 - Recursos Hídricos</option>
+        <option>545 – Meteorologia</option>
+        <option>571 - Desenvolvimento Científico</option>
+        <option>572 - Desenvolvimento Tecnológico e Engenharia</option>
+        <option>573 - Difusão do Conhecimento Científico e Tecnológico</option>
+        <option>601 - Promoção da Produção Vegetal</option>
+        <option>602 - Promoção da Produção Animal</option>
+        <option>603 - Defesa Sanitária Vegetal</option>
+        <option>604 - Defesa Sanitária Animal</option>
+        <option>605 – Abastecimento</option>
+        <option>606 - Extensão Rural</option>
+        <option>607 – Irrigação</option>
+        <option>608 - Promoção da Produção Agropecuária</option>
+        <option>609 - Defesa Agropecuária</option>
+        <option>631 - Reforma Agrária</option>
+        <option>632 – Colonização</option>
+        <option>661 - Promoção Industrial</option>
+        <option>662 - Produção Industrial</option>
+        <option>693 - Comércio Exterior</option>
+        <option>694 - Serviços Financeiros</option>
+        <option>721 - Comunicações Postais</option>
+        <option>722 – Telecomunicações</option>
+        <option>751 - Conservação de Energia</option>
+        <option>752 - Energia Elétrica</option>
+        <option>753 - Combustíveis Minerais</option>
+        <option>754 - Biocombustíveis</option>
+      </select>
+      <br><br>
+      <label for="assinatura">Assinatura do responsável pela informação:</label>
+      <div style="border: 1px solid #ccc; height: 80px; margin-top: 10px; border-radius: 5px;"></div>
+    </form>
+
+    <div class="print-instructions">
+      Para gerar o PDF, clique no botão abaixo ou pressione  <strong>Ctrl + P</strong>:<br><br>
+      <button onclick="window.print()">Imprimir / Salvar em PDF</button>
+    </div>
+  </div>
+</body>
+
+</html>
